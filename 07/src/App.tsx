@@ -1,11 +1,17 @@
-import Eat from "./components/learn/props/Eat";
-import Greeting from "./components/learn/props/Greeting";
+import ProfileCard from "./components/example/ex1/ProfileCard";
 
 const App = () => {
   return (
     <>
-      <Greeting name="John" age={30} />
-      <Eat name="pizza" age={10} />
+      <ProfileCard
+        background="https://images.pexels.com/photos/158251/forest-the-sun-morning-tucholskie-158251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        userPic="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        name="Sally Ramos"
+        instaId="@SallyTheramos"
+        onFollowClick={() => {
+          alert("follow");
+        }}
+      />
     </>
   );
 };
