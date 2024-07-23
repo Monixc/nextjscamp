@@ -5,9 +5,6 @@ const ProfileCard = (props: {
   instaId: string;
   onFollowClick: () => void;
 }) => {
-  const onClickHandler = () => {
-    alert("d");
-  };
   return (
     <>
       <article className="card">
