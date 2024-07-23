@@ -16,11 +16,9 @@ const App = () => {
       </div>
       <div>
         <br />
-        <Button text="Add" color="#ED4848" />
-        <br />
-        <Button text="Cancel" color="#ED4848" />
-        <br />
-        <Button text="Success" color="#ED4848" />
+        <Button className="bg-[#4f4f4f]">Add</Button>
+        <Button className="bg-[#ed4848]">Cancel</Button>
+        <Button className="bg-[#7d48ed]">Success</Button>
       </div>
     </>
   );

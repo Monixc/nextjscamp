@@ -1,7 +1,18 @@
-const Button = ({ text, color }: { text: string; color: string }) => {
+import { twMerge } from "tailwind-merge";
+
+type TButtonProps = React.ComponentPropsWithoutRef<"button">;
+
+const Button = ({ className, children, ...rest }: TButtonProps) => {
   return (
     <>
-      <button className="w-[77px] h-[44px] rounded-lg  ">{text}</button>
+      <button
+        className={twMerge(
+          "w-[77px] h-[44px] text-sm  text-white rounded-lg cursor-pointer mx-1 ",
+          className
+        )}
+        {...rest}>
+        {children}
+      </button>
     </>
   );
 };
