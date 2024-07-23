@@ -1,13 +1,9 @@
-import Fonts from "./components/run/Fonts";
+import Greeting from "./components/learn/props/Greeting";
+
 const App = () => {
-  const onClickHandler = () => {
-    alert("버튼이 클릭되었습니다");
-  };
   return (
     <>
-      <Fonts />
-      <h1>App Component</h1>
-      <button onClick={onClickHandler}>click</button>
+      <Greeting />
     </>
   );
 };
