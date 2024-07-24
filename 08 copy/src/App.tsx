@@ -1,7 +1,11 @@
+import { useState } from "react";
+import ColorBox from "./components/example/ColorBox";
+import LoginComponent from "./components/example/LoginComponent";
+
 const App = () => {
   return (
     <>
-      <h1>App Component</h1>
+      <LoginComponent />
     </>
   );
 };
