@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+@font-face {
+  font-family: "HancomMalangMalang-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "JejuDoldam";
+  src: url("../fonts/doldam.woff2"), url("../fonts/doldam.woff");
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.edu {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.malang {
+  font-family: "HancomMalangMalang-Regular";
+}
+
+.jeju {
+  font-family: "JejuDoldam";
+}
