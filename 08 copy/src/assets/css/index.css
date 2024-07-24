@@ -1,7 +1,2 @@
 @import "./fonts.css";
 @import "./tailwind.css";
-@layer base {
-  body {
-    @apply flex items-center justify-center min-h-dvh;
-  }
-}
