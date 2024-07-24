@@ -1,31 +1,24 @@
-import Button from "./components/html/Button";
-import Checkbox from "./components/html/Checkbox";
-import Input from "./components/html/Input";
+import { useState } from "react";
 
+//리액트에서 useState() 함수는 리액트가 추적/ 관찰 가능한 데이터를 생성산다.
+//useState() 함수는 배열을 반환한다
+//첫 번째 요소는 상태 값, 두 번째 요소는 상태 값을 변경하는 함수이다.
+
+//setcount(값)->원래의 매개변수를 참조할 필요가 없을 때;
+//setcount((현재상태값) => 값 ) -> 현재의 값을 참조할 때 콜백 함수 사용
 const App = () => {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="item-middle bg-black">
-      <div className="w-[375px] bg-white py-10 px-[25px] inter">
-        <h1 className="text-xl font-bold text-[#4f4f4f] mb-[10px]">
-          Sign Into App
-        </h1>
-        <p className="text-sm text-[#4f4f4f] mb-5">
-          Please enter your details to continue
-        </p>
-        <form action="" className="flex flex-col gap-4">
-          <Input type="text" placeholder="Enter your Name" />
-          <Input type="email" placeholder="someone@example.com" />
-          <Input type="password" placeholder="Enter Password" />
-          <Checkbox>I agree with terms and policies</Checkbox>
-          <div className="flex flex-col gap-4 mt-[32px]">
-            <Button className="bg-[#4f4f4f]">Sign In</Button>
-            <Button className="border border-[#4f4f4f] text-[#4f4f4f]">
-              Go To Log In
-            </Button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <>
+      <h1>Count : {count} </h1>
+      <button
+        onClick={() => {
+          setCount((count) => count + 1);
+        }}>
+        증가
+      </button>
+    </>
   );
 };
 export default App;
