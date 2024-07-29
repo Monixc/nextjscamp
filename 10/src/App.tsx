@@ -1,12 +1,15 @@
 // import Todo from "./components/todo-series/todo_context/Todo";
 // import TodoContextProvider from "./context/todoContext";
 
-import Todo from "./components/todo-series/todo_zustand/Todo";
+import Todo from "./components/todo-series/todo_context/Todo";
+import TodoFuncContextProvider from "./context/todoFuncContext";
 
 export default function App() {
   return (
     <>
-      <Todo />
+      <TodoFuncContextProvider>
+        <Todo />
+      </TodoFuncContextProvider>
     </>
   );
 }

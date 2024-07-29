@@ -1,7 +1,5 @@
-import { useReducer } from "react";
 import TodoEditor from "./TodoEditor";
 import TodoList from "./TodoList";
-import { todoReducer } from "../../../reducer/todoReducer";
 
 const Todo = () => {
   return (

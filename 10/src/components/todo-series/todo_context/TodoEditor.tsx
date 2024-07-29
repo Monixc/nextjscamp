@@ -1,14 +1,15 @@
 import { useContext, useState } from "react";
 import Button from "../../html/Button";
 import Input from "../../html/Input";
-import { TodoContext } from "../../../context/todoContext";
+import { TodoFuncContext } from "../../../context/todoFuncContext";
+//import { TodoContext } from "../../../context/todoContext";
 
 const TodoEditor = () => {
   const [text, setText] = useState("");
-  const { setTodos } = useContext(TodoContext);
+  const { addTodo } = useContext(TodoFuncContext);
   const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setTodos((todo) => [...todo, { id: Date.now(), text, isCompleted: false }]);
+    addTodo(text);
     setText("");
   };
   return (

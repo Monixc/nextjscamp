@@ -2,23 +2,38 @@
   "posts": [
     {
       "id": "1",
-      "title": "a title",
+      "title": "Hello world",
       "views": 100
     },
     {
       "id": "2",
-      "title": "another title",
+      "title": "Bye world",
       "views": 200
     },
     {
       "id": "3",
-      "title": "title",
+      "title": "Hello React",
       "views": 300
     },
     {
       "id": "4",
-      "title": "new new",
+      "title": "Json server test",
       "views": 300
+    },
+    {
+      "id": "5",
+      "title": "javascript",
+      "views": 200
+    },
+    {
+      "id": "6",
+      "title": "Typescript Jonna Hard",
+      "views": 300
+    },
+    {
+      "id": "7",
+      "title": "Good Bye",
+      "views": 0
     }
   ],
   "comments": [
