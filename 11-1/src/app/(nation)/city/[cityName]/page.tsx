@@ -5,13 +5,8 @@ import london from "/public/images/london.jpg";
 import paris from "/public/images/paris.jpg";
 import newyork from "/public/images/newyork.jpg";
 import Link from "next/link";
-export default function Home({
-  searchParams,
-}: {
-  searchParams: { city: string };
-}) {
-  const { city } = searchParams;
-
+export default function page({ params }: { params: { cityName: string } }) {
+  const { cityName: city } = params;
   return (
     <>
       <div className="flex justify-center items-center min-h-screen">
@@ -20,28 +15,28 @@ export default function Home({
           <ul className="flex items-center antialiased justify-around w-full">
             <li>
               <Link
-                href="/?city=seoul"
+                href="/city/seoul"
                 className={`${(city === "seoul" || !city) && "font-bold"}`}>
                 Seoul
               </Link>
             </li>
             <li>
               <Link
-                href="/?city=london"
+                href="/city/london"
                 className={`${city === "london" && "font-bold"}`}>
                 London
               </Link>
             </li>
             <li>
               <Link
-                href="/?city=Paris"
+                href="/city/paris"
                 className={`${city === "paris" && "font-bold"}`}>
                 Paris
               </Link>
             </li>
             <li>
               <Link
-                href="/?city=NewYork"
+                href="/city/newyork"
                 className={`${city === "newyork" && "font-bold"}`}>
                 NewYork
               </Link>
